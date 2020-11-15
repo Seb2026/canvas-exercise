@@ -8,3 +8,15 @@ function drawFillRectangle(){
 }
 const rectangleBtn = document.querySelector(`#rectangle`);
 rectangleBtn.addEventListener(`click`, drawFillRectangle);
+
+function strokeRect(){
+    context.strokeStyle= "blue";
+    context.strokeRect(20, 150, 50, 50);
+}
+
+const rectangle2 = document.querySelector(`#rectangle-strokerect`);
+rectangle2.addEventListener(`click`, strokeRect);
+
+function drawRectPath(){
+    
+}
