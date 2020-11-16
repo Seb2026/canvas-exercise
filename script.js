@@ -34,3 +34,21 @@ function drawRectPath(){
 
 const recPath = document.querySelector(`#rectPath`);
 recPath.addEventListener(`click`, drawRectPath);
+
+function drawBullsEye(){
+    context.beginPath();
+    context.strokeStyle = `green`;
+    context.lineWidth = 10;
+    context.arc(400, 250, 60, 0, Math.PI * 2);
+    context.stroke();
+    context.closePath();
+    context.strokeStyle = `green`;
+    context.beginPath();
+    context.arc(400, 250 , 30, 0, Math.PI * 2);
+    context.stroke();
+    context.closePath();
+
+}
+
+const circlePath = document.querySelector(`#circle`);
+circlePath.addEventListener(`click`, drawBullsEye);
