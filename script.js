@@ -18,5 +18,19 @@ const rectangle2 = document.querySelector(`#rectangle-strokerect`);
 rectangle2.addEventListener(`click`, strokeRect);
 
 function drawRectPath(){
-    
+    context.beginPath();
+    context.moveTo(20, 250);
+    context.lineTo(300, 250);
+    context.stroke();
+    context.lineTo(300, 370);
+    context.stroke();
+    context.lineTo(20, 370);
+    context.stroke();
+    context.lineTo(20, 250);
+    context.stroke();
+
+
 }
+
+const recPath = document.querySelector(`#rectPath`);
+recPath.addEventListener(`click`, drawRectPath);
