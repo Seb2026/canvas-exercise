@@ -52,3 +52,12 @@ function drawBullsEye(){
 
 const circlePath = document.querySelector(`#circle`);
 circlePath.addEventListener(`click`, drawBullsEye);
+
+function drawText(){
+    context.fillStyle = `blue`;
+    context.font = `30px monospace`;
+    context.fillText(`Ironhack`, 170, 450);
+}
+
+const ironhackText = document.querySelector(`#text`);
+ironhackText.addEventListener(`click`, drawText);
